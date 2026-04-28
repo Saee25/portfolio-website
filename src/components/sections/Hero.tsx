@@ -9,24 +9,6 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center section-pad overflow-hidden">
-      {/* Static decorative orbs */}
-      <div
-        className="absolute top-20 right-10 w-40 h-40 rounded-full opacity-60 hidden md:block"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 30%, hsl(var(--neon-pink)), hsl(var(--neon-purple)) 60%, hsl(250 60% 10%))",
-          boxShadow: "0 0 60px hsl(var(--neon-purple)/0.5)",
-        }}
-      />
-      <div
-        className="absolute bottom-20 left-10 w-24 h-24 rounded-full opacity-50 hidden md:block"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 30%, hsl(var(--neon-cyan)), hsl(var(--neon-blue)) 60%, hsl(250 60% 8%))",
-          boxShadow: "0 0 40px hsl(var(--neon-blue)/0.5)",
-        }}
-      />
-
       <div className="container-wide grid md:grid-cols-2 gap-10 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,8 +18,8 @@ export const Hero = () => {
           <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">
             Hello, I'm
           </p>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-            <span className="neon-text">{profile.name}</span>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4 text-foreground/90 dark:text-white/90">
+            {profile.name}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-3 font-light">
             Software Developer
@@ -69,29 +51,31 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative h-[400px] hidden md:flex items-center justify-center"
         >
-          {/* Big planet — static */}
-          <div
-            className="relative w-64 h-64 rounded-full"
-            style={{
-              background:
-                "radial-gradient(circle at 30% 30%, hsl(var(--neon-purple)), hsl(var(--neon-blue)) 50%, hsl(250 70% 10%) 100%)",
-              boxShadow:
-                "0 0 100px hsl(var(--neon-purple)/0.5), inset -30px -30px 60px hsl(250 70% 5%/0.7)",
-            }}
-          >
+          {/* Main planet — gentle float, no orbit */}
+          <div className="animate-float-gentle">
             <div
-              className="absolute inset-0 rounded-full opacity-30"
+              className="relative w-72 h-72 rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle at 70% 60%, transparent 60%, hsl(var(--neon-pink)/0.4))",
+                  "radial-gradient(circle at 28% 28%, hsl(var(--neon-cyan)) 0%, hsl(var(--neon-purple)) 45%, hsl(260 80% 12%) 100%)",
+                boxShadow:
+                  "0 0 120px hsl(var(--neon-purple)/0.55), inset -40px -50px 80px hsl(260 80% 5%/0.8)",
               }}
-            />
+            >
+              {/* surface bands */}
+              <div
+                className="absolute inset-0 rounded-full opacity-40 mix-blend-overlay"
+                style={{
+                  background:
+                    "repeating-linear-gradient(15deg, transparent 0 18px, hsl(var(--neon-pink)/0.25) 18px 22px)",
+                }}
+              />
+              {/* highlight */}
+              <div
+                className="absolute top-6 left-10 w-20 h-10 rounded-full bg-white/20 blur-xl"
+              />
+            </div>
           </div>
-          {/* Static ring */}
-          <div
-            className="absolute w-[420px] h-[120px] rounded-full border-2 border-primary/30"
-            style={{ transform: "rotateX(75deg)" }}
-          />
         </motion.div>
       </div>
     </section>
