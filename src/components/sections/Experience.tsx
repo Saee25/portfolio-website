@@ -11,7 +11,7 @@ export const Experience = () => (
         className="text-center mb-14"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Experience</p>
-        <h2 className="text-4xl md:text-5xl font-bold">Where I've <span className="neon-text">Orbited</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Professional <span className="neon-text">Experience</span></h2>
       </motion.div>
 
       <div className="relative max-w-5xl mx-auto">
@@ -28,7 +28,7 @@ export const Experience = () => (
               transition={{ duration: 0.6 }}
               className={`relative mb-12 pl-16 md:pl-0 md:grid md:grid-cols-2 md:gap-10 ${left ? "" : "md:[&>*:first-child]:order-2"}`}
             >
-              <div className="absolute left-4 md:left-1/2 top-6 w-5 h-5 rounded-full bg-gradient-hero animate-pulse-neon -translate-x-1/2 z-10" />
+              <div className="absolute left-4 md:left-1/2 top-6 w-5 h-5 rounded-full bg-gradient-hero -translate-x-1/2 z-10" />
 
               <div className={left ? "md:pr-10 md:text-right" : "md:pl-10"}>
                 <div className="glass rounded-2xl p-6 hover:neon-glow transition-all">

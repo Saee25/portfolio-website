@@ -10,7 +10,7 @@ export const Extracurricular = () => (
         className="text-center mb-14"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Leadership</p>
-        <h2 className="text-4xl md:text-5xl font-bold">Beyond the <span className="neon-text">Code</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Leadership & <span className="neon-text">Extracurriculars</span></h2>
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-6">

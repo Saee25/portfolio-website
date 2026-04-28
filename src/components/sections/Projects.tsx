@@ -65,7 +65,7 @@ export const Projects = () => (
       <div className="text-center mt-14">
         <Link
           to="/projects"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-hero text-primary-foreground font-medium hover:scale-105 transition-transform group animate-pulse-neon"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-hero text-primary-foreground font-medium hover:scale-105 transition-transform group"
         >
           View all projects
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
