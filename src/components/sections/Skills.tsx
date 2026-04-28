@@ -3,17 +3,17 @@ import { skillGroups } from "@/data/portfolio";
 import {
   SiC, SiJavascript, SiTypescript, SiPython, SiMysql, SiFlutter,
   SiReact, SiNodedotjs, SiExpress, SiMongodb, SiFirebase, SiNumpy, SiPandas,
-  SiAmazonwebservices, SiAmazondynamodb, SiGit, SiGithub, SiJenkins, SiDocker, SiKubernetes,
+  SiGit, SiGithub, SiJenkins, SiDocker, SiKubernetes,
   SiVite, SiVercel, SiOpenai, SiTensorflow, SiShadcnui,
 } from "react-icons/si";
-import { FaJava, FaChartBar, FaServer, FaBrain, FaCode, FaCloud } from "react-icons/fa";
+import { FaJava, FaChartBar, FaServer, FaBrain, FaCode, FaCloud, FaAws, FaDatabase } from "react-icons/fa";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   C: SiC, Java: FaJava, JavaScript: SiJavascript, TypeScript: SiTypescript, Python: SiPython,
   SQL: SiMysql, Flutter: SiFlutter, React: SiReact, "Node.js": SiNodedotjs, Express: SiExpress,
   MongoDB: SiMongodb, MERN: FaServer, "Generative AI": SiOpenai, "Machine Learning": FaBrain,
   "REST APIs": FaCode, Firebase: SiFirebase, NumPy: SiNumpy, Pandas: SiPandas, Matplotlib: FaChartBar,
-  AWS: SiAmazon, "AWS SES": FaCloud, Amplify: SiAmazon, DynamoDB: SiAmazondynamodb,
+  AWS: FaAws, "AWS SES": FaCloud, Amplify: FaAws, DynamoDB: FaDatabase,
   Git: SiGit, GitHub: SiGithub, Jenkins: SiJenkins, Docker: SiDocker, Kubernetes: SiKubernetes,
   Vite: SiVite, Vercel: SiVercel, ShadCN: SiShadcnui, TensorFlow: SiTensorflow,
 };
