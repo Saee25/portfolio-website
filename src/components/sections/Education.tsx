@@ -10,7 +10,7 @@ export const Education = () => (
         className="text-center mb-12"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Education</p>
-        <h2 className="text-4xl md:text-5xl font-bold">My <span className="neon-text">Academic Path</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold"><span className="neon-text">Education</span></h2>
       </motion.div>
 
       <div className="relative max-w-3xl mx-auto">
@@ -25,7 +25,7 @@ export const Education = () => (
             transition={{ duration: 0.6, delay: i * 0.15 }}
             className="relative pl-16 md:pl-0 md:grid md:grid-cols-2 gap-8 mb-10"
           >
-            <div className="absolute left-4 md:left-1/2 top-3 w-5 h-5 rounded-full bg-gradient-hero animate-pulse-neon -translate-x-1/2" />
+            <div className="absolute left-4 md:left-1/2 top-3 w-5 h-5 rounded-full bg-gradient-hero -translate-x-1/2" />
             <div className="md:text-right md:pr-12">
               <div className="glass rounded-2xl p-6 hover:neon-glow transition-all">
                 <div className="flex md:justify-end items-center gap-2 mb-2">

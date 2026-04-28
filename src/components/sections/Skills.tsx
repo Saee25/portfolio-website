@@ -26,9 +26,9 @@ export const Skills = () => (
         className="text-center mb-14"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Tech Stack</p>
-        <h2 className="text-4xl md:text-5xl font-bold">My <span className="neon-text">Constellation of Skills</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Technical <span className="neon-text">Skills</span></h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          A spectrum of languages, frameworks, and tools I use to ship production-grade software.
+          A range of languages, frameworks, and tools I use to build production-grade software.
         </p>
       </motion.div>
 
@@ -58,7 +58,6 @@ export const Skills = () => (
                   >
                     <div
                       className="flex items-center gap-2 px-4 py-2.5 rounded-full glass border border-primary/20 hover:border-primary/60 hover:neon-glow transition-all hover:-translate-y-1"
-                      style={{ animation: `float-slow ${4 + (i % 3)}s ease-in-out infinite`, animationDelay: `${i * 0.2}s` }}
                     >
                       <Icon className="w-4 h-4 text-primary group-hover:text-secondary transition-colors" />
                       <span className="text-sm font-medium">{skill}</span>

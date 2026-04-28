@@ -10,7 +10,7 @@ export const Achievements = () => (
         className="text-center mb-14"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Achievements</p>
-        <h2 className="text-4xl md:text-5xl font-bold">Wins Across the <span className="neon-text">Galaxy</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Honors & <span className="neon-text">Achievements</span></h2>
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -25,7 +25,7 @@ export const Achievements = () => (
           >
             <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20 blur-2xl" style={{ background: "hsl(var(--neon-purple))" }} />
             <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-hero flex items-center justify-center animate-pulse-neon shrink-0">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-hero flex items-center justify-center shrink-0">
                 <Trophy className="w-7 h-7 text-primary-foreground" />
               </div>
               <div className="flex-1">
