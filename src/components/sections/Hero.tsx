@@ -9,6 +9,26 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center section-pad overflow-hidden">
+      {/* Static decorative orbs */}
+      <div
+        className="absolute top-20 right-10 w-40 h-40 rounded-full opacity-60 hidden md:block animate-float-gentle"
+        style={{
+          background:
+            "radial-gradient(circle at 30% 30%, hsl(var(--neon-pink)), hsl(var(--neon-purple)) 60%, hsl(250 60% 10%))",
+          boxShadow: "0 0 60px hsl(var(--neon-purple)/0.5)",
+          animationDelay: "0.5s",
+        }}
+      />
+      <div
+        className="absolute bottom-20 left-10 w-24 h-24 rounded-full opacity-50 hidden md:block animate-float-gentle"
+        style={{
+          background:
+            "radial-gradient(circle at 30% 30%, hsl(var(--neon-cyan)), hsl(var(--neon-blue)) 60%, hsl(250 60% 8%))",
+          boxShadow: "0 0 40px hsl(var(--neon-blue)/0.5)",
+          animationDelay: "1.2s",
+        }}
+      />
+
       <div className="container-wide grid md:grid-cols-2 gap-10 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
