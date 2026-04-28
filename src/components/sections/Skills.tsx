@@ -3,7 +3,7 @@ import { skillGroups } from "@/data/portfolio";
 import {
   SiC, SiJavascript, SiTypescript, SiPython, SiMysql, SiFlutter,
   SiReact, SiNodedotjs, SiExpress, SiMongodb, SiFirebase, SiNumpy, SiPandas,
-  SiAmazon, SiAmazondynamodb, SiGit, SiGithub, SiJenkins, SiDocker, SiKubernetes,
+  SiAmazonwebservices, SiAmazondynamodb, SiGit, SiGithub, SiJenkins, SiDocker, SiKubernetes,
   SiVite, SiVercel, SiOpenai, SiTensorflow, SiShadcnui,
 } from "react-icons/si";
 import { FaJava, FaChartBar, FaServer, FaBrain, FaCode, FaCloud } from "react-icons/fa";
