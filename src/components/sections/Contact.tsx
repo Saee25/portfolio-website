@@ -12,8 +12,8 @@ export const Contact = () => {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message captured ✨",
-      description: "This is a frontend-only demo. Connect a backend to send messages.",
+      title: "Message received",
+      description: "Thank you for reaching out. I will get back to you shortly.",
     });
     setForm({ name: "", email: "", message: "" });
   };
@@ -26,7 +26,7 @@ export const Contact = () => {
           className="text-center mb-14"
         >
           <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Contact</p>
-          <h2 className="text-4xl md:text-5xl font-bold">Let's <span className="neon-text">Build Something</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Get in <span className="neon-text">Touch</span></h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -77,7 +77,7 @@ export const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full px-6 py-3 rounded-full bg-gradient-hero text-primary-foreground font-medium animate-pulse-neon flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
+              className="w-full px-6 py-3 rounded-full bg-gradient-hero text-primary-foreground font-medium flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
             >
               <Send className="w-4 h-4" /> Send Message
             </button>

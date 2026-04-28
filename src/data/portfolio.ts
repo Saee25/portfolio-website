@@ -3,7 +3,7 @@
 export const profile = {
   name: "Saee Nalawade",
   titles: ["Full Stack Developer", "Software Engineer", "MERN + AWS Specialist"],
-  tagline: "Building scalable, beautiful web experiences from the ground up.",
+  tagline: "Building scalable, reliable, and well-crafted web experiences from the ground up.",
   location: "Andheri, Mumbai 57, Maharashtra",
   email: "saeenalawade5102@gmail.com",
   phone: "+91 8104212394",
@@ -14,7 +14,7 @@ export const profile = {
     resume: "/resume.pdf",
   },
   about:
-    "I'm a B.E. Information Technology student at the University of Mumbai (CGPA 9.04) with a deep focus on full-stack development. I enjoy turning complex problems into clean, performant interfaces — from MERN dashboards to AWS-backed production systems.",
+    "I am a B.E. Information Technology student at the University of Mumbai (CGPA 9.04) with a strong focus on full-stack development. I enjoy turning complex problems into clean, performant interfaces — from MERN dashboards to AWS-backed production systems.",
   stats: [
     { label: "CGPA", value: 9.04, suffix: "" },
     { label: "Internships", value: 3, suffix: "+" },
