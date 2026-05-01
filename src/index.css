@@ -96,7 +96,7 @@
     box-shadow: var(--shadow-neon);
   }
   .section-pad {
-    @apply py-20 md:py-28 px-4 md:px-8;
+    @apply py-14 md:py-24 px-4 md:px-8;
   }
   .container-wide {
     @apply max-w-6xl mx-auto;
@@ -107,6 +107,25 @@
   .text-balance { text-wrap: balance; }
   .animation-delay-200 { animation-delay: 200ms; }
   .animation-delay-400 { animation-delay: 400ms; }
+}
+
+/* iOS Safari stability fallback: avoid expensive fixed + blur combos */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: hsl(255 50% 10% / 0.82);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 /* Keyframes */

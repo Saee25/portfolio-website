@@ -169,12 +169,21 @@ export const achievements = [
     date: "March 2025",
     description:
       "Winners at Quasar 3.0 (VPPCOE & VA), competing against 600+ teams. Built a VR-based virtual classroom for children with Autism Spectrum Disorder and Intellectual Disabilities. Led back-end development and debugging.",
+    image: "/assets/HackathonWin.jpeg",
   },
   {
     title: "Mentor & Judge — Newbiethon 2026",
     date: "March 2026",
     description:
       "Invited as a Mentor and Judge for Newbiethon 2026, a hackathon focused on guiding and evaluating first-year student teams.",
+    image: "/assets/MentorandJudge.jpeg",
+  },
+  {
+    title: "Augenblick Hackathon — Finalist",
+    date: "2026",
+    description:
+      "Reached finalist stage at the Augenblick Hackathon through strong problem-solving, rapid prototyping, and collaborative execution.",
+    image: "/assets/AugenblickFinalist.jpeg",
   },
 ];
 
@@ -183,10 +192,12 @@ export const extracurricular = [
     title: "TSEC CodeCell — Senior Committee Member",
     period: "Jun 2025 — Jun 2026",
     description: "Technical planning and execution of TSEC Hacks, Dive-Into-Code, and Weekly Coding Challenges.",
+    image: "/assets/Codecell.jpeg",
   },
   {
     title: "Rotaract Club of TSEC — Joint Secretary",
     period: "Jun 2024 — Jun 2025",
     description: "Coordinated club initiatives, events, and inter-college collaborations.",
+    image: "/assets/Rotaract.jpeg",
   },
 ];

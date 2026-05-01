@@ -52,7 +52,7 @@ export const Hero = () => {
       <div className="container-wide relative z-10 grid md:grid-cols-2 gap-12 items-center pb-12 px-4 md:px-8 w-full">
 
         {/* ─── LEFT: Text column ─────────────────────────── */}
-        <div className="flex flex-col gap-0">
+        <div className="flex flex-col gap-0 items-center text-center md:items-start md:text-left">
 
           {/* Availability badge */}
           <motion.div {...fadeUp(0)} className="mb-7">
@@ -73,7 +73,7 @@ export const Hero = () => {
             className="font-bold leading-[1.08] mb-3 tracking-tight"
             style={{ fontSize: "clamp(42px, 6vw, 72px)", fontFamily: "'Space Grotesk', sans-serif" }}
           >
-            <span className="block text-white/90 italic">Hi, I&apos;m</span>
+            <span className="block text-white/90">Hi, I&apos;m</span>
             <span
               className="block animate-gradient-x"
               style={{
@@ -108,7 +108,7 @@ export const Hero = () => {
           </motion.div>
 
           {/* CTA buttons */}
-          <motion.div {...fadeUp(0.34)} className="flex flex-wrap gap-4 mb-9">
+          <motion.div {...fadeUp(0.34)} className="flex flex-wrap gap-4 mb-9 justify-center md:justify-start">
             <button
               onClick={() => scrollTo("projects")}
               className="group px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 text-white text-[14px]"
@@ -157,7 +157,7 @@ export const Hero = () => {
           </motion.div>
 
           {/* Social links + phone */}
-          <motion.div {...fadeUp(0.44)} className="flex items-center gap-3">
+          <motion.div {...fadeUp(0.44)} className="flex items-center gap-3 justify-center md:justify-start">
             {[
               { href: profile.links.github, icon: <Github className="w-[18px] h-[18px]" />, label: "GitHub" },
               { href: profile.links.linkedin, icon: <Linkedin className="w-[18px] h-[18px]" />, label: "LinkedIn" },
@@ -190,8 +190,6 @@ export const Hero = () => {
                 {icon}
               </a>
             ))}
-            <div className="w-px h-6 bg-white/10 mx-1" />
-            <span className="text-sm text-white/40 font-medium">{profile.phone}</span>
           </motion.div>
         </div>
 

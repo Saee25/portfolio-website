@@ -5,18 +5,18 @@ import { extracurricular } from "@/data/portfolio";
 export const Extracurricular = () => {
   const gridClass =
     extracurricular.length === 2
-      ? "grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
-      : "grid md:grid-cols-3 gap-6";
+      ? "grid md:grid-cols-2 gap-4 max-w-4xl mx-auto"
+      : "grid sm:grid-cols-2 lg:grid-cols-3 gap-5";
 
   return (
-    <section id="extracurricular" className="section-pad">
+    <section id="extracurricular" className="py-12 md:py-16 px-4 md:px-8">
       <div className="container-wide">
       <motion.div
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-        className="text-center mb-14"
+        className="text-center mb-7 md:mb-9"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Leadership</p>
-        <h2 className="text-4xl md:text-5xl font-bold">Leadership & <span className="neon-text">Extracurriculars</span></h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Leadership & <span className="neon-text">Extracurriculars</span></h2>
       </motion.div>
 
       <div className={gridClass}>
@@ -27,19 +27,21 @@ export const Extracurricular = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="glass rounded-2xl p-6 hover:neon-glow hover:-translate-y-1 transition-all"
+            className="glass rounded-xl p-4 hover:neon-glow hover:-translate-y-1 transition-all"
           >
-            <div
-              data-placeholder={`extra-image-${i}`}
-              className="aspect-video rounded-xl mb-4 border border-dashed border-primary/30 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest"
-            >
-              Add image
+            <div className="aspect-video rounded-lg mb-3 overflow-hidden border border-primary/20">
+              <img
+                src={item.image}
+                alt={item.title}
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="flex items-center gap-2 mb-2">
               <Users className="w-4 h-4 text-primary" />
               <p className="text-xs text-primary uppercase tracking-widest">{item.period}</p>
             </div>
-            <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+            <h3 className="font-bold text-base md:text-lg mb-2">{item.title}</h3>
             <p className="text-sm text-muted-foreground">{item.description}</p>
           </motion.div>
         ))}
