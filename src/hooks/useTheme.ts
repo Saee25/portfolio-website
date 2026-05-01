@@ -8,8 +8,8 @@ export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window === "undefined") return "dark";
     const stored = localStorage.getItem(STORAGE_KEY) as Theme | null;
-    if (stored) return stored;
-    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    // Default to dark — the portfolio is designed for dark mode
+    return stored ?? "dark";
   });
 
   useEffect(() => {

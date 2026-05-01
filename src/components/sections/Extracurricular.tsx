@@ -2,9 +2,15 @@ import { motion } from "framer-motion";
 import { Users } from "lucide-react";
 import { extracurricular } from "@/data/portfolio";
 
-export const Extracurricular = () => (
-  <section id="extracurricular" className="section-pad">
-    <div className="container-wide">
+export const Extracurricular = () => {
+  const gridClass =
+    extracurricular.length === 2
+      ? "grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+      : "grid md:grid-cols-3 gap-6";
+
+  return (
+    <section id="extracurricular" className="section-pad">
+      <div className="container-wide">
       <motion.div
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
         className="text-center mb-14"
@@ -13,7 +19,7 @@ export const Extracurricular = () => (
         <h2 className="text-4xl md:text-5xl font-bold">Leadership & <span className="neon-text">Extracurriculars</span></h2>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className={gridClass}>
         {extracurricular.map((item, i) => (
           <motion.div
             key={i}
@@ -38,6 +44,7 @@ export const Extracurricular = () => (
           </motion.div>
         ))}
       </div>
-    </div>
-  </section>
-);
+      </div>
+    </section>
+  );
+};

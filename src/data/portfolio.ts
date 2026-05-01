@@ -31,27 +31,56 @@ export const education = [
     period: "May 2023 — May 2027",
     location: "Mumbai, Maharashtra",
   },
+  {
+    school: "PTVA's Sathaye College",
+    degree: "Higher Secondary (12th HSC)",
+    score: "MHTCET 96.5 percentile | 12th HSC 74%",
+    period: "May 2021 — May 2023",
+    location: "Mumbai, Maharashtra",
+  },
+  {
+    school: "VPMS Madhavrao Bhagwat School",
+    degree: "Secondary School (10th SSC)",
+    score: "10th SSC 94%",
+    period: "Till May 2021",
+    location: "Mumbai, Maharashtra",
+  },
 ];
 
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["C", "Java", "JavaScript", "TypeScript", "Python", "SQL", "Flutter"],
+    items: ["JavaScript", "TypeScript", "Python", "Java", "C", "Flutter"],
   },
   {
-    title: "Frameworks & Libraries",
-    items: [
-      "React", "Node.js", "Express", "MongoDB", "MERN", "Generative AI",
-      "Machine Learning", "REST APIs", "Firebase", "NumPy", "Pandas", "Matplotlib",
-    ],
+    title: "Frontend",
+    items: ["React", "Next.js", "HTML5", "CSS3"],
   },
   {
-    title: "Developer Tools",
-    items: [
-      "AWS", "AWS SES", "Amplify", "DynamoDB", "Git", "GitHub",
-      "Jenkins", "Docker", "Kubernetes", "Vite", "Vercel", "ShadCN",
-    ],
+    title: "Backend & DB",
+    items: ["Node.js", "Express", "MongoDB", "Firebase", "NumPy"],
   },
+  {
+    title: "Cloud & DevOps",
+    items: ["AWS", "Git", "GitHub", "Docker", "Kubernetes"],
+  },
+];
+
+export const additionalSkills = [
+  "REST API",
+  "CRUD",
+  "MERN Stack",
+  "Generative AI",
+  "Machine Learning",
+  "API Building",
+  "Full Stack Dev",
+  "OOP",
+  "AWS SES",
+  "AWS Amplify",
+  "DynamoDB",
+  "Vite",
+  "Vercel",
+  "ShadCN",
 ];
 
 export const experience = [
@@ -141,14 +170,15 @@ export const achievements = [
     description:
       "Winners at Quasar 3.0 (VPPCOE & VA), competing against 600+ teams. Built a VR-based virtual classroom for children with Autism Spectrum Disorder and Intellectual Disabilities. Led back-end development and debugging.",
   },
+  {
+    title: "Mentor & Judge — Newbiethon 2026",
+    date: "March 2026",
+    description:
+      "Invited as a Mentor and Judge for Newbiethon 2026, a hackathon focused on guiding and evaluating first-year student teams.",
+  },
 ];
 
 export const extracurricular = [
-  {
-    title: "Mentor & Judge — Newbiethon 2026",
-    period: "March 2026",
-    description: "Invited as a Mentor and Judge for Newbiethon 2026 — a hackathon for first-year students.",
-  },
   {
     title: "TSEC CodeCell — Senior Committee Member",
     period: "Jun 2025 — Jun 2026",

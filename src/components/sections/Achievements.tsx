@@ -21,10 +21,10 @@ export const Achievements = () => (
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="glass rounded-2xl p-8 neon-border hover:neon-glow transition-all relative overflow-hidden"
+            className="glass rounded-2xl p-8 neon-border hover:neon-glow transition-all relative overflow-hidden h-full flex flex-col"
           >
             <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20 blur-2xl" style={{ background: "hsl(var(--neon-purple))" }} />
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4 min-h-[190px]">
               <div className="w-14 h-14 rounded-2xl bg-gradient-hero flex items-center justify-center shrink-0">
                 <Trophy className="w-7 h-7 text-primary-foreground" />
               </div>

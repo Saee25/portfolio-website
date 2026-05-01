@@ -4,53 +4,8 @@
 
 @layer base {
   :root {
-    /* Light theme — soft lavender galaxy */
-    --background: 250 60% 97%;
-    --foreground: 260 40% 15%;
-
-    --card: 250 50% 99%;
-    --card-foreground: 260 40% 15%;
-
-    --popover: 250 50% 99%;
-    --popover-foreground: 260 40% 15%;
-
-    --primary: 265 85% 55%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 220 90% 60%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 250 30% 92%;
-    --muted-foreground: 260 20% 40%;
-
-    --accent: 190 90% 55%;
-    --accent-foreground: 260 40% 15%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 260 30% 85%;
-    --input: 260 30% 88%;
-    --ring: 265 85% 55%;
-
-    --neon-purple: 265 85% 60%;
-    --neon-blue: 220 90% 60%;
-    --neon-cyan: 190 90% 55%;
-    --neon-pink: 320 80% 65%;
-
-    --glass-bg: 250 60% 99% / 0.65;
-    --glass-border: 265 60% 70% / 0.35;
-
-    --gradient-hero: linear-gradient(135deg, hsl(265 85% 55%), hsl(220 90% 60%));
-    --gradient-galaxy: radial-gradient(ellipse at top, hsl(265 70% 92%) 0%, hsl(250 60% 97%) 60%);
-    --shadow-neon: 0 0 30px hsl(265 85% 60% / 0.35), 0 0 60px hsl(220 90% 60% / 0.15);
-    --shadow-glow: 0 8px 32px hsl(265 85% 55% / 0.18);
-
-    --radius: 0.75rem;
-  }
-
-  .dark {
-    --background: 250 60% 5%;
+    /* Default maps to dark theme for this portfolio */
+    --background: 248 80% 3%;
     --foreground: 250 20% 95%;
 
     --card: 255 50% 9%;
@@ -87,18 +42,30 @@
     --glass-border: 265 80% 65% / 0.30;
 
     --gradient-hero: linear-gradient(135deg, hsl(265 90% 60%), hsl(220 95% 60%));
-    --gradient-galaxy: radial-gradient(ellipse at top, hsl(265 60% 12%) 0%, hsl(250 60% 5%) 60%);
     --shadow-neon: 0 0 30px hsl(265 90% 65% / 0.55), 0 0 80px hsl(220 95% 65% / 0.25);
     --shadow-glow: 0 8px 32px hsl(265 90% 65% / 0.35);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* dark class kept for compatibility but root already is dark */
   }
 }
 
 @layer base {
   * { @apply border-border; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
-    @apply bg-background text-foreground antialiased;
-    background-image: var(--gradient-galaxy);
+    @apply text-foreground antialiased;
+    overflow-x: hidden;
+    background-color: #08061a;
+    background-image:
+      linear-gradient(rgba(102, 80, 220, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(102, 80, 220, 0.055) 1px, transparent 1px),
+      radial-gradient(ellipse 85% 60% at 50% -10%, rgba(80, 60, 200, 0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 55% 55% at 85% 55%, rgba(120, 40, 190, 0.12) 0%, transparent 65%);
+    background-size: 56px 56px, 56px 56px, 100% 100%, 100% 100%;
     background-attachment: fixed;
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   }
@@ -195,4 +162,41 @@
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 6s ease infinite;
+}
+
+/* Extra keyframes for Hero redesign */
+@keyframes float-diamond {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(6deg); }
+}
+@keyframes float-girl {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.04); }
+}
+@keyframes gradient-name {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes dot-pulse {
+  0%, 100% { box-shadow: 0 0 4px 0px #30ffff99; opacity: 0.8; }
+  50% { box-shadow: 0 0 10px 3px #30ffffcc; opacity: 1; }
+}
+@keyframes spin-orbit3 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float-diamond { animation: float-diamond 7s ease-in-out infinite; }
+.animate-float-girl    { animation: float-girl 6.5s ease-in-out infinite; }
+.animate-pulse-ring    { animation: pulse-ring 4s ease-in-out infinite; }
+.animate-spin-orbit3   { animation: spin-orbit3 90s linear infinite reverse; }
+
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }

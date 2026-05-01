@@ -6,7 +6,7 @@ import { projects } from "@/data/portfolio";
 
 const ProjectsPage = () => (
   <PageLayout>
-    <section className="section-pad">
+    <section className="px-4 md:px-8 pb-20 md:pb-28 pt-2 md:pt-4">
       <div className="container-wide">
         <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to home
@@ -17,9 +17,6 @@ const ProjectsPage = () => (
           <h1 className="text-5xl md:text-6xl font-bold">
             All <span className="neon-text">Projects</span>
           </h1>
-          <p className="text-muted-foreground mt-4 max-w-2xl">
-            Every shipped project — from hackathon wins to production platforms.
-          </p>
         </motion.div>
 
         <div className="space-y-20">
