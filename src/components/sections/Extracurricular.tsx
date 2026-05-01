@@ -15,7 +15,6 @@ export const Extracurricular = () => {
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
         className="text-center mb-7 md:mb-9"
       >
-        <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Leadership</p>
         <h2 className="text-3xl md:text-4xl font-bold">Leadership & <span className="neon-text">Extracurriculars</span></h2>
       </motion.div>
 

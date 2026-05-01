@@ -49,7 +49,6 @@ export const Skills = () => (
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <p className="text-sm uppercase tracking-[0.28em] text-primary/90 mb-3">Tech Stack</p>
         <h2 className="text-4xl md:text-5xl font-bold">Technical <span className="neon-text">Skills</span></h2>
       </motion.div>
 

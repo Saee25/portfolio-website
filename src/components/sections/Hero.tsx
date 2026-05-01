@@ -16,7 +16,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[100svh] flex items-start overflow-hidden -mt-20 pt-[80px] md:pt-[100px]"
+      className="relative min-h-[100svh] flex items-start overflow-hidden pt-[60px] sm:pt-[70px] md:pt-[100px]"
     >
       {/* ── Ambient glow orbs ── */}
       <div
@@ -41,18 +41,11 @@ export const Hero = () => {
         }}
       />
 
-      {/* ── orbit decoration bottom-left ── */}
-      <div
-        className="pointer-events-none absolute left-[-40px] bottom-0 w-[260px] h-[260px] animate-spin-orbit3 opacity-20"
-      >
-        <img src="/assets/orbit3.svg" alt="" className="w-full h-full" />
-      </div>
-
       {/* ── Main content grid ── */}
       <div className="container-wide relative z-10 grid md:grid-cols-2 gap-12 items-center pb-12 px-4 md:px-8 w-full">
 
         {/* ─── LEFT: Text column ─────────────────────────── */}
-        <div className="flex flex-col gap-0 items-center text-center md:items-start md:text-left">
+        <div className="flex flex-col gap-0 items-center text-center mt-6 md:mt-0 md:items-start md:text-left">
 
           {/* Availability badge */}
           <motion.div {...fadeUp(0)} className="mb-7">
@@ -191,6 +184,20 @@ export const Hero = () => {
               </a>
             ))}
           </motion.div>
+
+          {/* Mobile-only large centered girl illustration */}
+          <motion.div
+            {...fadeUp(0.55)}
+            className="pointer-events-none md:hidden flex justify-center w-full mt-2"
+          >
+            <img
+              src="/assets/girl.svg"
+              alt=""
+              aria-hidden="true"
+              className="w-[145px] sm:w-[165px] h-auto animate-float-girl opacity-95 object-contain"
+              style={{ filter: "drop-shadow(0 0 32px rgba(102, 117, 255, 0.42))" }}
+            />
+          </motion.div>
         </div>
 
         {/* ─── RIGHT: Girl illustration + floating cards ── */}
@@ -198,18 +205,18 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
-          className="relative hidden md:flex items-center justify-center h-[540px]"
+          className="relative hidden md:flex items-center justify-center h-[340px] lg:h-[390px] xl:h-[420px]"
         >
           {/* Glow rings behind girl */}
           <div
-            className="absolute w-[390px] h-[390px] rounded-full animate-pulse-ring border"
+            className="absolute w-[220px] h-[220px] lg:w-[260px] lg:h-[260px] xl:w-[290px] xl:h-[290px] rounded-full animate-pulse-ring border"
             style={{
               background: "radial-gradient(circle, rgba(70, 82, 192, 0.22) 0%, transparent 70%)",
               borderColor: "rgba(102, 117, 255, 0.18)",
             }}
           />
           <div
-            className="absolute w-[285px] h-[285px] rounded-full animate-pulse-ring border"
+            className="absolute w-[165px] h-[165px] lg:w-[190px] lg:h-[190px] xl:w-[220px] xl:h-[220px] rounded-full animate-pulse-ring border"
             style={{
               animationDelay: "1.2s",
               borderColor: "rgba(48, 255, 255, 0.13)",
@@ -224,7 +231,7 @@ export const Hero = () => {
             <img
               src="/assets/girl.svg"
               alt="Developer illustration"
-              className="w-[320px] h-auto"
+              className="w-[175px] lg:w-[205px] xl:w-[225px] h-auto object-contain"
             />
           </div>
 

@@ -9,7 +9,6 @@ export const Achievements = () => (
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
         className="text-center mb-10 md:mb-12"
       >
-        <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Achievements</p>
         <h2 className="text-3xl md:text-5xl font-bold">Honors & <span className="neon-text">Achievements</span></h2>
       </motion.div>
 

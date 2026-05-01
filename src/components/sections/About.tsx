@@ -48,7 +48,6 @@ export const About = () => (
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">About Me</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           A Brief <span className="neon-text">Introduction</span>
         </h2>
