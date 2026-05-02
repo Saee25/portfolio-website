@@ -47,19 +47,6 @@ export const Hero = () => {
         {/* ─── LEFT: Text column ─────────────────────────── */}
         <div className="flex flex-col gap-0 items-center text-center mt-6 md:mt-0 md:items-start md:text-left">
 
-          {/* Availability badge */}
-          <motion.div {...fadeUp(0)} className="mb-7">
-            <span
-              className="inline-flex items-center gap-2 px-4 py-[7px] rounded-full text-[13px] font-medium text-white/80 border border-[hsl(var(--neon-purple)/0.3)] bg-[hsl(var(--neon-purple)/0.08)] backdrop-blur-sm"
-            >
-              <span
-                className="w-[7px] h-[7px] rounded-full bg-[#30ffff] flex-shrink-0"
-                style={{ animation: "dot-pulse 2.2s ease-in-out infinite", boxShadow: "0 0 6px #30ffff" }}
-              />
-              Available for opportunities
-            </span>
-          </motion.div>
-
           {/* Heading */}
           <motion.h1
             {...fadeUp(0.1)}
